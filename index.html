@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Калькулятор расходов</title>
+  <style>
+    /* Стили для внешнего вида компонента */
+    .expense-form {
+      margin-bottom: 10px;
+    }
+    .expense-list {
+      list-style-type: none;
+      padding: 0;
+    }
+    .expense-item {
+      margin-bottom: 5px;
+    }
+    /* Стили для внешнего вида компонента */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+.expense-form {
+  margin-bottom: 20px;
+}
+
+.expense-form input {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.expense-form button {
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.expense-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.expense-item {
+  margin-bottom: 5px;
+}
+
+.expense-item button {
+  padding: 2px 5px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+  </style>
+</head>
+<body>
+  <div>
+    <h2>Калькулятор расходов</h2>
+    <div class="expense-form">
+      <input type="text" id="expense-name" placeholder="Название расхода">
+      <input type="number" id="expense-amount" placeholder="Сумма расхода">
+      <button id="add-expense">Добавить расход</button>
+    </div>
+    <ul id="expense-list" class="expense-list"></ul>
+    <p>Общая сумма расходов: <span id="total-expenses">0</span></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
